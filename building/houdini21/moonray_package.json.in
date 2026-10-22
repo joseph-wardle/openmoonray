@@ -1,0 +1,13 @@
+{
+    "load_package_once": true,
+    "enable": "houdini_os == 'linux' and houdini_version == '@HOUDINI_VERSION@'",
+    "version": "@OMR_VERSION@",
+    "env": [
+        {"MOONRAY_ROOT": "$HOUDINI_PACKAGE_PATH/.."},
+        {"PATH": {"value": "$MOONRAY_ROOT/bin", "method": "prepend"}},
+        {"RDL2_DSO_PATH": "$MOONRAY_ROOT/rdl2dso"},
+        {"MOONRAY_CLASS_PATH": "$MOONRAY_ROOT/shader_json"},
+        {"ARRAS_SESSION_PATH": "$MOONRAY_ROOT/sessions"}
+    ],
+    "hpath": "$MOONRAY_ROOT/plugin/houdini"
+}
