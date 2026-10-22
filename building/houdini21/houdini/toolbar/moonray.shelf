@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- TAB-menu tools for MoonRay in Solaris. Installed with OpenMoonRay's
+       Houdini package (building/houdini21). -->
+
+  <tool name="vop_moonraymaterialbuilder" label="MoonRay Material Builder" icon="VOP_raytrace">
+    <toolMenuContext name="network">
+      <contextOpType>Vop/materialbuilder</contextOpType>
+    </toolMenuContext>
+    <toolSubmenu>MoonRay</toolSubmenu>
+    <script scriptType="python"><![CDATA[
+import moonraytoolutils
+moonraytoolutils.create_material_builder(kwargs)
+]]></script>
+  </tool>
+</shelfDocument>
