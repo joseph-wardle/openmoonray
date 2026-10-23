@@ -7,7 +7,8 @@
         {"PATH": {"value": "$MOONRAY_ROOT/bin", "method": "prepend"}},
         {"RDL2_DSO_PATH": "$MOONRAY_ROOT/rdl2dso"},
         {"MOONRAY_CLASS_PATH": "$MOONRAY_ROOT/shader_json"},
-        {"ARRAS_SESSION_PATH": "$MOONRAY_ROOT/sessions"}
+        {"ARRAS_SESSION_PATH": "$MOONRAY_ROOT/sessions"},
+        {"HDMOONRAY_DOUBLESIDED": "1"}
     ],
     "hpath": "$MOONRAY_ROOT/plugin/houdini"
 }

@@ -85,6 +85,8 @@ the pipeline's package path.
 
 - Textures must be tiled and MIP-mapped (`maketx in.exr -o out.tx`). MoonRay
   rejects plain EXR/PNG/JPEG on purpose (`accept_untiled=false`).
+- All geometry renders double-sided, as in RenderMan (`HDMOONRAY_DOUBLESIDED=1`
+  in the package). Set `moonray:side_type` on a prim to override it.
 - Houdini's GL viewport cannot draw MoonRay shaders; the Material Builder
   includes a UsdPreviewSurface for that.
 - Hydra settings without a USD equivalent can be forced with environment
